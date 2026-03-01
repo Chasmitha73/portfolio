@@ -1,0 +1,90 @@
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #e6e6e6;
+  color: #6d666b;
+  padding: 0 20px;
+}
+.profile-image {
+  width: 150px;       /* size of the image */
+  height: 150px;      /* keeps it square */
+  border-radius: 50%; /* makes it circular */
+  display: block;
+  margin: 0 auto 20px auto; /* centers it and adds spacing below */
+  object-fit: cover;   /* ensures the image fits well */
+  border: 3px solid #007bff; /* optional colored border */
+}
+
+header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #d3c1d1;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+section {
+  padding: 50px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.project a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
